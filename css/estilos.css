@@ -1,0 +1,364 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* { margin:0; padding:0; box-sizing: border-box;}
+
+html { font-size: 62.5%;}
+
+body {
+	font-size: 10px;
+	background: rgb(241,241,237);
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	}
+.centrado {
+	max-width: 97.1rem;
+	margin: 0 auto;
+	}
+h1 {
+	font-size: 7.2rem;
+	color: rgb(44, 62, 80);
+	font-weight: 400;
+	line-height: .75em;
+	}
+h2 {
+	font-size: 1.8rem;
+	font-weight: 100;
+	color: rgb(44, 62, 80);
+	}
+h3 {
+	font-size: 2.1rem; 
+	font-weight: 400;
+/*	margin-bottom: 3.5rem;*/
+	}
+h4 {
+	color: rgb(7, 158, 166);
+	font-size: 1.8rem;
+	margin-bottom: 2.5rem;
+	}
+li {
+	list-style: none;
+	}
+a {
+	text-decoration: none; 
+	}
+/*Menú*/
+nav {
+	 background: rgb(114,203,202);
+	 height:40px;
+	 border-bottom: 5px solid rgb(7,158,166);
+	 position: fixed;
+	 top:0;
+	 width: 100%;
+	 z-index: 999;
+	}
+nav li {
+	display: inline-block;
+	font-size: 1.6rem;
+	margin:8px 0; 
+	padding: 0 16px; 
+	border-right: 1px solid rgb(230, 241, 245);
+	}
+nav li:last-of-type {
+	border: none;
+	}
+nav li a {
+	color: rgb(230, 241, 245);
+	}
+nav li a:hover {
+	color: rgb(7,158,166);
+	}
+/*Hola*/
+.hola{
+	margin: 230px 1%;
+	width: 52rem;
+	float: right;
+	}
+h1 strong {
+	font-weight: 800;
+	}
+h1 span {
+	font-size: 3.6rem;
+	}
+h1 .nombre {
+	color: rgb(7, 158, 166);
+	}
+h1 .profesion {
+	font-size:2.8rem;
+	font-weight: 300;
+	}
+h2 strong {
+	font-weight: 800;
+	font-size: 2.1rem;
+}
+/*Portafolio*/
+#portafolio{
+	background: rgb(230, 241, 245);
+	border: 1px solid rgb(114, 203, 202);
+	padding: 35px 0;
+	clear: both;
+	}
+#portafolio ul {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+#portafolio li {
+	background: rgb(194, 212, 200);
+	border: 1px solid rgb(114,203,202);
+	width: 30rem;
+	height: 215px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 3rem 1% 0;
+	position: relative;
+	overflow: hidden;
+	}
+#portafolio .responsive {
+	background: rgb(7, 158, 166);
+	}
+#portafolio .code {
+	background: rgb(114, 203, 202);
+	}
+#portafolio li img {
+	/*opacity: 0.9;*/
+	width: 100%;
+/*	position: absolute;
+	bottom: 2.3rem;
+	left: 4.3rem;*/
+	}
+#portafolio li:hover img {
+	display: none;
+	}
+/*#portafolio li:hover::before {
+	content:'';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: block;
+	width: 26px;
+	height: 26px;
+	}
+#portafolio .responsive li:hover a::before {
+	background: url(../img/fold-responsive.svg);
+	}
+#portafolio .code::before {
+	background: url(../img/fold-code.svg);
+	}*/
+/*#portafolio li:nth-child(3), 
+#portafolio li:nth-child(6) {
+	
+	}*/
+#portafolio li a {
+	display: none;
+	}
+#portafolio li:hover {
+	background: rgb(194, 212, 200);
+	}
+#portafolio li:hover::before {
+	background: none;
+	}
+#portafolio li:hover a {
+	display: block;
+	color: rgb(7, 158, 166);
+	font-size: 1.3rem;
+	padding: 2rem;
+	}
+#portafolio strong {
+	font-size: 1.8rem;
+	}
+#portafolio li span {
+	font-size: 1.6rem;
+	text-decoration: underline;
+	margin: 10px 0 0;
+	display: block;
+}
+/*Acerca*/
+#acerca {
+	background: rgb(194, 212, 200);
+	border: 1px solid rgb(7, 158, 166);
+	padding: 45px 0 35px;
+	}
+#acerca h2 {
+	margin-bottom: 3.5rem;
+	}
+#acerca article {
+	display: inline-block;
+	width: 46.9rem;
+	overflow: hidden;
+	height: 700px;
+	padding: 35px 1%;
+	vertical-align: top;
+	}
+.experiencia {
+	background: rgb(44, 62, 80);
+	margin-right: 3%;
+	}
+.experiencia h3 {
+	color: rgb(230, 241, 245);
+	margin-bottom: 8rem;
+	}
+.experiencia img {
+	margin: 0 ;
+	width: 100%;
+	}
+.aptitudes {
+	background: rgb(114, 203, 202);
+	}
+.aptitudes h3 {
+	color: rgb(44, 62, 80);
+	}
+.aptitudes li strong {
+	color: rgb(44, 62, 80);
+	font-weight: 400;
+	font-size: 1.4rem;
+	margin-bottom: .8rem;
+	display: block;
+	}
+span.barra_bg {
+	display: block;
+	width: 100%;
+	height: 1rem;
+	background: rgb(7, 158, 166);
+	margin-bottom: 1rem;
+	padding: .2rem;
+	}
+.barras {
+	border-bottom: 1px dashed rgb(7, 158, 166);
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+	}
+.porcentaje {
+	background: rgb(132, 196, 189);
+	display: block;
+	width: 100%;
+	height: .6rem;
+	}
+.por_90 {
+	width: 90%;
+	}
+.por_85 {
+	width: 85%;
+	}
+.por_80 {
+	width: 80%;
+	}
+.por_75 {
+	width: 75%;
+	}
+.por_70 {
+	width: 70%;
+	}
+/*Contacto*/
+#contacto {
+	background: rgb(7, 158, 166);
+	color: rgb(194, 212, 200);
+	padding: 9rem 5rem;
+	}
+#contacto h2 {
+	color: rgb(194, 212, 200);
+	margin-bottom: 5rem;
+	}
+#contacto p, 
+#contacto a {
+	font-size: 1.6rem;
+	font-weight: normal;
+	margin-bottom: 2rem;
+	}
+.mail {
+	color: rgb(194, 212, 200);
+	background: url(../img/mail.svg) left center no-repeat;
+	padding: 0 0 0 3rem;
+	}
+.movil {
+	background: url(../img/movil.svg) .3rem center no-repeat;
+	padding: .5rem 0 0 3rem;
+	height: 3.1rem;
+	}
+.rsd {
+	display: inline-block;
+	width: 4.5rem;
+	height: 4.5rem;
+	margin-right: 1.5rem;
+	text-indent: -9999rem;
+	}
+.mail:hover,
+.rsd:hover, 
+.cv:hover {
+	opacity: 0.5;
+	}
+.linkedin {
+	background:url(../img/linkedin.svg);
+	}
+.behance {
+	background: url(../img/behance.svg);
+	}
+.platzi {
+	background: url(../img/platzi.svg);
+	}
+.cv {
+	background: rgb(194, 212, 200);
+	color: rgb(7, 158, 166);
+	font-size: 1.6rem;
+	text-align: center;
+	height: 4.5rem;
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.3rem 1rem;
+	border-radius: 4px;
+	font-weight: 700;
+	}
+footer {
+	background: rgb(44, 62, 80);
+	color: rgb(194, 212, 200);
+	padding: .7rem;
+	text-align: center;
+	font-size: 1.2rem;
+	}
+/*Responsive styles*/
+@media (max-width: 965px) {
+	#portafolio .vacio {
+		display: none;
+	}
+	#acerca article {
+		margin: 0 auto 5%;
+		display: block;
+	}
+}
+@media (max-width: 530px) {
+	h1{
+		font-size: 3.3rem;
+	}
+	h1 span {
+		font-size: 1.8rem;
+	}
+	h1 .profesion {
+		font-size: 2.3rem;
+	}
+	.hola {
+		width: 85%;
+		margin: 40% auto;
+		float: none;
+	}
+	h2 {
+		font-size: 1.8rem;
+	}
+	#acerca article {
+		width: 95%;
+		height: auto;
+	}
+	.experiencia img {
+		width: 95%;
+	}
+	#contacto p, 
+	#contacto a {
+		font-size: 1.2rem;
+	}
+}
+@media (max-width: 385px) {
+	nav li {
+		font-size: 1.2rem;
+		padding: 0 1.2rem;
+	}
+}
+@media (max-width: 300px) {
+	}

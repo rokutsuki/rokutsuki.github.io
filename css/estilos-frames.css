@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding:0; box-sizing: border-box;}
+
+html { font-size: 62.5%;}
+
+body {
+	font-size: 10px;
+	background: rgb(132, 196, 189);
+	font-family: 'Montserrat', helvetica, arial, sans-serif;
+	font-weight: 100;
+	color: rgb(44, 62, 80);
+	}
+
+#frames { background: rgb(7, 158, 166);}
+
+.centrado { 
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #E6F1F5;}
+
+#datos,
+#carrusel {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#datos { 
+	background: #E6F1F5;
+	width: 34%;
+	padding: 2%;}
+
+#carrusel {
+	background: #55C2C2;
+	padding: 2% 0;
+	width: 64%;}
+	
+#bg-carrusel {
+	background: #7ECECA;
+	border: 1px solid #45B5C4;
+	padding: 10px;
+	width: 520px;
+	margin: 0 auto;
+}
+#slider img {
+	width: 100%;
+}
+
+h1 { 
+	font: normal 28px 'Montserrat', sans-serif;
+	margin: 0 0 25px;
+	text-align: center;
+	font-weight: 800;}
+	
+h2 { 
+	font: normal 21px 'Montserrat', sans-serif;}
+
+h2 span { font-size: 18px;}
+
+h3 { 
+	font-size: 21px;
+	margin-bottom: 5px;}
+
+h3.url {
+	text-decoration: underline;
+	color: #55C2C2;
+}
+
+h4 { font-size: 18px;}
+
+p { margin-bottom: 20px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;}
+
+li { list-style: inside;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;}
+	
+#btn {	
+	background: rgb(245, 190, 88);
+	height: 40px;
+}
+	
+#btn p {
+	line-height: 40px;
+	margin: 40px 0;}
+
+#btn a {
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	color: rgb(44, 62, 80)}
+	
+#btn a:hover { text-decoration: underline;}
+
+@media (max-width: 800px){
+	#datos,
+	#carrusel {
+		width: 100%;
+	}
+	#btn {	
+	background-image: none;}
+	#btn a {
+		margin: 0 auto;
+	}
+}
+@media (max-width: 520px){
+	#bg-carrusel {
+		width: 100%;
+		padding: 0;
+	}
+}
+@media (max-width: 300px) {
+	#btn p, #btn a{
+		width: 100%;
+	}
+	iframe {
+    	height: 300px;
+	}
+}
+
