@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* { margin:0; padding:0; box-sizing: border-box;}
+
+html { font-size: 62.5%;}
+
+body {
+	font-size: 11px;
+	background: rgb(236,240,241);
+	font-family: Helvetica, Arial, sans-serif;
+	font-family: "freight-sans-pro"; 
+	font-weight: 300;
+	color: rgb(30,40,50);
+	background: url(../img/bg.jpg) no-repeat fixed center;
+	background-size: 100%;
+	}
+/*Tipografía*/
+h1, h2, h3, h4, h5, h6 {
+	font-family:"acumin-pro-extra-condensed"; 
+}
+h1 {
+	font-size: 2.4em;
+}
+h2 {
+	font-size: 4.8em;
+	margin: 10px 0 10px 5%;
+	color: rgb(158,109,40);
+}
+h3{
+	font-size: 3.2em;
+	color: rgb(223,143,20);
+	margin-bottom: 20px;
+}
+h4 {
+	font-size: 2.8em;
+	color: rgb(158,109,40);
+}
+p, dd, dt, li {
+	font-size: 1.4em;
+}
+p{
+	margin-bottom: 20px;
+}
+dt, p:first-letter {
+	font-size: 1.6em;
+	color: rgb(189,144,117);
+	margin-top: 10px;
+}
+a {
+	color: rgb(189,144,117);
+	width: 100%;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+dt a {
+	font-weight: bold;
+}
+dd, #referencias li {
+	margin-bottom: 15px;
+}
+/*Imágenes*/
+figure {
+	width: 45%;
+	margin-right: 3%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+figure img {
+	width: 100%;
+	margin-top: 15px;
+	vertical-align: middle;
+}
+.vertical img, .vertical figcaption {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	position: static;
+}
+.horizontal100{
+	width: 100%;
+	margin-bottom: 40px;
+}
+figcaption {
+	font-size: 1.1em;
+	background: rgba(255,255,255,0.5);
+	width: 100%;
+	padding: 5px;
+	position: absolute;
+	bottom: 0px;
+}
+/*Menú*/
+#menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+#logo, #nav,  #nav h1, #nav ul{
+	display: inline-block;
+	vertical-align: middle;
+}
+#logo {
+	background: rgba(255,255,255,0.9);
+	padding: 15px 7px;
+	border: 1px solid rgb(158,109,40);
+	border-top: 0;
+	margin-left: 20px;
+}
+#nav h1 {
+	height: 45px;
+	line-height: 45px;
+	background: rgb(250,202,105);
+	padding: 0 15px;
+	color: rgb(158,109,40);
+}
+#nav ul {
+	background: rgb(251,250,232);
+	height: 45px;
+}
+#nav li  {
+	display: inline-block;
+	line-height: 45px;	padding: 0 7px;
+	
+}
+#nav li:first-child  {
+	padding-left: 14px;
+	
+}
+#nav li:last-child  {
+	padding-right: 14px;
+	
+}
+#nav a {
+	text-decoration: none;
+	color: rgb(158,109,40);
+}
+#nav a:hover{
+	text-decoration: underline;
+	color: rgb(189,144,117);
+}
+/*Estructura*/
+section {
+	padding-top: 200px;
+}
+.bg100 {
+	background: rgba(255,255,255,0.9);
+	margin-bottom: 20px;
+}
+.ficha {
+	width: 90%;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.data {
+	display: inline-block;
+	vertical-align: top;
+	width: 43%;
+	border-left: 10px solid rgba(189,144,117,0.1);
+	padding-left: 30px;
+	margin-right: 2%;
+}
+.especial {
+	background: rgba(250,202,105,0.1);
+	border: 1px solid rgb(250,202,105);
+	padding: 10px;
+}
+footer {
+	background: rgb(250,202,105);
+	padding: 50px 0;
+	margin-top: 30px;
+}
+footer .data {
+	vertical-align: baseline;
+}
+footer p {
+	margin-bottom: 0;
+}
+footer p:first-letter {
+	color: rgb(158,109,40);
+}
+@media only screen and (max-width: 680px) {
+	body {
+		background: url(../img/bg.jpg) repeat ;
+	}
+	#menu {
+		width: 100%;
+		position: fixed;
+		
+	}
+	#logo {
+		position: absolute;
+	}
+	#nav {
+		width: 100%;
+		background: rgb(251,250,232);
+	}
+    #nav h1 {
+    	display: block;
+    	text-align: center;
+    }
+    #nav ul {
+    	width: 80%;
+    	padding-left: 90px;
+    	height: auto;
+    }
+    #nav li {
+    	padding: 0 2px;
+    	line-height: 25px;
+    	border-bottom: 1px solid rgb(250,202,105);
+
+    }
+    .data {
+    	width: 100%;
+    }
+    figure {
+    	display: block;
+    	margin: 0 auto;
+    	width: 100%;
+    }
+    footer .data {
+    	margin-bottom: 30px;
+    }
+}
